@@ -25,7 +25,7 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="DENY"
+            android:text="@string/tip_button_deny"
             android:onClick="denyButtonHandler"
             style="?android:attr/borderlessButtonStyle"
             />
@@ -33,8 +33,8 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ALLOW"
-            android:onClick="sendButtonHandler"
+            android:text="@string/tip_button_allow"
+            android:onClick="allowButtonHandler"
             style="?android:attr/borderlessButtonStyle"/>
     </LinearLayout>
 

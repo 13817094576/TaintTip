@@ -25,7 +25,7 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
-    boolean decisionSent = false;
+    private boolean decisionSent = false;
 
     private void sendResponse(byte[] response)
     {
@@ -45,7 +45,8 @@ public class MainActivity extends Activity {
             OutputStream socketOutputStream = socket.getOutputStream();
             socketOutputStream.write(response);
             socketOutputStream.flush();
-        } catch (IOException e)
+        }
+        catch (IOException e)
         {
             e.printStackTrace();
             return;
@@ -79,6 +80,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onPause()
     {
+        super.onPause();
+
         // User cancelled the dialog, send "ALLOW" to API
         sendAllow();
     }
@@ -172,8 +175,14 @@ public class MainActivity extends Activity {
         //
         // Display application info (UID)
         int uid = intentBundle.getInt("uid", 0);
-        String appName = uidToAppName(uid);
-        setHeadText(appName);
+        if (uid == 0)
+        {
+            setHeadText("Invalid UID");
+        }
+        else {
+            String appName = uidToAppName(uid);
+            setHeadText(appName + getString(R.string.tip_permission_request));
+        }
 
         //
         // Refresh taint list

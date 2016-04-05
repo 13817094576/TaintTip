@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">权限提示</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+
+    <string name="tip_permission_request">&#160;将使用以下权限</string>
+    <string name="tip_button_allow">允许</string>
+    <string name="tip_button_deny">拒绝</string>
+
+</resources>
