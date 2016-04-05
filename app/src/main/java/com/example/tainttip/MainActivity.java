@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -26,6 +27,9 @@ import java.util.List;
 public class MainActivity extends Activity {
 
     private boolean decisionSent = false;
+
+    // The taint raw value to text description converter
+    private TaintParser taintParser;
 
     private void sendResponse(byte[] response)
     {
@@ -120,7 +124,7 @@ public class MainActivity extends Activity {
     {
         //
         // Convert taints to taint info list
-        TaintInfo[] taintInfoList = TaintParser.taintToTips(taint);
+        TaintInfo[] taintInfoList = taintParser.taintToTips(taint);
         if (taintInfoList == null || taintInfoList.length == 0)
         {
             return;
@@ -194,6 +198,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Initialize the taint parser
+        taintParser = new TaintParser(this);
     }
 
     @Override

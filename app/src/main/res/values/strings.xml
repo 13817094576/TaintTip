@@ -9,4 +9,41 @@
     <string name="tip_button_allow">ALLOW</string>
     <string name="tip_button_deny">DENY</string>
 
+    <string name="taint_name_location">LOCATION</string>
+    <string name="taint_description_location">Location of the phone</string>
+    <string name="taint_name_contacts">CONTACTS</string>
+    <string name="taint_description_contacts">Contacts stored in the phone</string>
+    <string name="taint_name_mic">MICROPHONE</string>
+    <string name="taint_description_mic">The audio recorded by this phone</string>
+    <string name="taint_name_phonenumber">PHONE NUMBER</string>
+    <string name="taint_description_phonenumber">Phone number stored in this phone</string>
+    <string name="taint_name_gps">GPS</string>
+    <string name="taint_description_gps">Location acquired by GPS</string>
+    <string name="taint_name_location_net">LOCATION BY NETWORK</string>
+    <string name="taint_description_location_net">Location info acquired by network</string>
+    <string name="taint_name_location_last">LAST LOCATION</string>
+    <string name="taint_description_location_last">Last location of phone</string>
+    <string name="taint_name_camera">CAMERA</string>
+    <string name="taint_description_camera">Photo taken by this phone</string>
+    <string name="taint_name_accelerometer">ACCELEROMETER</string>
+    <string name="taint_description_accelerometer">Data produced by accelerometer</string>
+    <string name="taint_name_sms">SMS</string>
+    <string name="taint_description_sms">Text Messages stored in this phone</string>
+    <string name="taint_name_imei">IMEI</string>
+    <string name="taint_description_imei">International Mobile Equipment Identity</string>
+    <string name="taint_name_imsi">IMSI</string>
+    <string name="taint_description_imsi">International Mobile Subscriber Identification Number</string>
+    <string name="taint_name_iccid">ICCID</string>
+    <string name="taint_description_iccid">Integrated Circuit Card Identity</string>
+    <string name="taint_name_devicesn">DEVICE SN</string>
+    <string name="taint_description_devicesn">Device Serial Number of this phone</string>
+    <string name="taint_name_account">ACCOUNT</string>
+    <string name="taint_description_account">Accounts stored in this phone</string>
+    <string name="taint_name_history">HISTORY</string>
+    <string name="taint_description_history">Web browsing history of user</string>
+    <string name="taint_name_photo">PHOTO</string>
+    <string name="taint_description_photo">Photo stored in this phone</string>
+    <string name="taint_name_calendar">CALENDAR</string>
+    <string name="taint_description_calendar">User data stored in calendar</string>
+
 </resources>

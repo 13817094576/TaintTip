@@ -9,4 +9,41 @@
     <string name="tip_button_allow">允许</string>
     <string name="tip_button_deny">拒绝</string>
 
+    <string name="taint_name_location">位置</string>
+    <string name="taint_description_location">手机当前所在的位置</string>
+    <string name="taint_name_contacts">联系人</string>
+    <string name="taint_description_contacts">手机中存储的联系人信息</string>
+    <string name="taint_name_mic">音频</string>
+    <string name="taint_description_mic">手机所录制的声音信息</string>
+    <string name="taint_name_phonenumber">电话号码</string>
+    <string name="taint_description_phonenumber">手机所存储的电话号码信息</string>
+    <string name="taint_name_gps">GPS</string>
+    <string name="taint_description_gps">通过GPS获取的位置信息</string>
+    <string name="taint_name_location_net">网络位置</string>
+    <string name="taint_description_location_net">通过网络获取的位置信息</string>
+    <string name="taint_name_location_last">最近位置</string>
+    <string name="taint_description_location_last">手机最近所处的位置</string>
+    <string name="taint_name_camera">相机</string>
+    <string name="taint_description_camera">手机所拍摄的照片</string>
+    <string name="taint_name_accelerometer">加速度仪</string>
+    <string name="taint_description_accelerometer">由加速度仪所产生的信息</string>
+    <string name="taint_name_sms">短信</string>
+    <string name="taint_description_sms">存储在当前手机中的短信信息</string>
+    <string name="taint_name_imei">IMEI</string>
+    <string name="taint_description_imei">移动设备国际识别码</string>
+    <string name="taint_name_imsi">IMSI</string>
+    <string name="taint_description_imsi">国际移动用户识别码</string>
+    <string name="taint_name_iccid">ICCID</string>
+    <string name="taint_description_iccid">集成电路卡识别码</string>
+    <string name="taint_name_devicesn">设备序列号</string>
+    <string name="taint_description_devicesn">当前手机的设备序列号</string>
+    <string name="taint_name_account">帐户</string>
+    <string name="taint_description_account">存储在当前手机中的帐户信息</string>
+    <string name="taint_name_history">历史记录</string>
+    <string name="taint_description_history">用户浏览网页的历史记录</string>
+    <string name="taint_name_photo">照片</string>
+    <string name="taint_description_photo">手机中所存储的照片</string>
+    <string name="taint_name_calendar">日历</string>
+    <string name="taint_description_calendar">用户在日历中存储的信息</string>
+
 </resources>
